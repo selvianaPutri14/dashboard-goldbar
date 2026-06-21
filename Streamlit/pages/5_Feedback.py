@@ -197,7 +197,7 @@ def main():
 
                 st.balloons()
 
-                time.sleep(2)
+                time.sleep(30)
 
                 st.session_state.show_dashboard = False
 
