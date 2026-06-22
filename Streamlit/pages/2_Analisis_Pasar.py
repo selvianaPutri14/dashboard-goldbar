@@ -229,11 +229,17 @@ def main():
             "Tren Harga Emas (Close)"
         )
 
-        st.subheader("Tren Harga Emas (Close)")
+        fig = px.line(
+            filtered_df,
+            x='Date',
+            y='Close',
+            title="Harga Emas per Hari (USD)"
+        )
 
-        chart_df = filtered_df.set_index("Date")
-
-        st.line_chart(chart_df["Close"])
+        st.plotly_chart(
+            fig,
+            use_container_width=True
+        )
 
         # ======================================================
         # GRAFIK VOLUME
@@ -242,9 +248,17 @@ def main():
             "Volume Perdagangan Emas Berjangka"
         )
 
-        st.subheader("Volume Perdagangan Emas Berjangka")
+        fig_volume = px.line(
+            filtered_df,
+            x='Date',
+            y='Volume',
+            title="Volume Perdagangan per Hari"
+        )
 
-        st.line_chart(chart_df["Volume"])
+        st.plotly_chart(
+            fig_volume,
+            use_container_width=True
+        )
 
         # ======================================================
         # BERITA EMAS DARI NEWSAPI
