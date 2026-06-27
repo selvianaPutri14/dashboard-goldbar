@@ -62,7 +62,7 @@ if "allow_prediction" not in st.session_state:
 
     st.warning(
         """
-        ⚠️Akses ditolak.
+        ⚠️ Akses ditolak.
 
         Silakan buka halaman Analisis Pasar terlebih dahulu
         kemudian klik tombol
@@ -76,7 +76,7 @@ if st.session_state.allow_prediction is not True:
 
     st.warning(
         """
-     ⚠️Akses ditolak.
+     ⚠️ Akses ditolak.
 
         Silakan buka halaman Analisis Pasar terlebih dahulu
         kemudian klik tombol
