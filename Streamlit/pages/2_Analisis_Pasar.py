@@ -24,9 +24,9 @@ st.set_page_config(
 
 if "allow_analysis" not in st.session_state:
 
-    st.error(
+    st.warning(
         """
-        🚫 Akses ditolak.
+        ⚠️ Akses ditolak.
 
         Silakan buka halaman Main terlebih dahulu
         kemudian klik tombol
@@ -39,9 +39,9 @@ if "allow_analysis" not in st.session_state:
 
 if st.session_state.allow_analysis is not True:
 
-    st.error(
+    st.warning(
         """
-        🚫 Akses ditolak.
+        ⚠️ Akses ditolak.
 
         Silakan buka halaman Main terlebih dahulu
         kemudian klik tombol "Go to Analisis Pasar".
