@@ -121,7 +121,7 @@ def main():
     #### 2. Apa batasan model ini?
 
     - Ketidakpastian ekonomi global dapat memengaruhi akurasi.
-    - Prediksi jangka pendek (1–90 hari) lebih stabil dibandingkan jangka panjang.
+    - Prediksi jangka pendek (1–21 hari) lebih stabil dibandingkan jangka panjang.
     - Model ini merupakan sistem pendukung keputusan dan bukan pengganti saran keuangan profesional.
 
     #### 3. Bagaimana cara terbaik berinvestasi emas?
