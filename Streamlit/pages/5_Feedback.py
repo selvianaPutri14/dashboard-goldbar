@@ -36,9 +36,9 @@ if (
     or st.session_state.allow_feedback is False
 ):
 
-    st.error(
+    st.warning(
         """
-        🚫 Akses ditolak.
+        ⚠️ Akses ditolak.
 
         Silakan buka halaman Edukasi FAQ terlebih dahulu
         kemudian klik tombol
@@ -50,9 +50,9 @@ if (
 
 if st.session_state.allow_feedback is not True:
 
-    st.error(
+    st.warning(
         """
-        🚫 Akses ditolak.
+        ⚠️ Akses ditolak.
 
         Silakan buka halaman Edukasi FAQ terlebih dahulu
         kemudian klik tombol
