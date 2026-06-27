@@ -15,9 +15,9 @@ st.set_page_config(
 
 if "allow_faq" not in st.session_state:
 
-    st.error(
+    st.warning(
         """
-        🚫 Akses ditolak.
+        ⚠️ Akses ditolak.
 
         Silakan buka halaman Prediksi Harga terlebih dahulu
         kemudian klik tombol
@@ -30,9 +30,9 @@ if "allow_faq" not in st.session_state:
 
 if st.session_state.allow_faq is not True:
 
-    st.error(
+    st.warning(
         """
-        🚫 Akses ditolak.
+        ⚠️ Akses ditolak.
 
         Silakan buka halaman Prediksi Harga terlebih dahulu
         kemudian klik tombol
