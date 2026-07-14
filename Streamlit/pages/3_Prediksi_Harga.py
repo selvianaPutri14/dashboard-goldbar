@@ -11,6 +11,7 @@ from datetime import datetime, timedelta
 import yfinance as yf
 import sqlite3
 
+
 # =================================================
 # DATABASE
 # =================================================
@@ -86,7 +87,6 @@ if st.session_state.allow_prediction is not True:
 
     st.stop()
 
-
 # ======================================================
 # SIDEBAR
 # ======================================================
@@ -100,7 +100,6 @@ def sidebar():
         st.markdown(
             "## 📈 Prediksi Harga Emas"
         )
-
 
         st.markdown("---")
 
@@ -421,15 +420,7 @@ def main():
 
             last_close = close_prices[-1]
             last_pred = predictions[-1]
-            
-            historical_low = df.loc[df["close"].idxmin()]
-            historical_high = df.loc[df["close"].idxmax()]
-            
-            lowest_price = historical_low["close"]
-            highest_price = historical_high["close"]
-            
-            buy_gap = (last_close - lowest_price) / lowest_price * 100
-            sell_gap = (highest_price - last_close) / highest_price * 100
+            percent_change = ((last_pred - last_close) / last_close) * 100
 
             # =============================================
             # SIMPAN RIWAYAT PREDIKSI
