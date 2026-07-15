@@ -114,7 +114,7 @@ def main():
             "Pilih rentang tahun:",
             min_year,
             max_year,
-            (2020, max_year)
+            (2021, max_year)
         )
 
         # ======================================================
