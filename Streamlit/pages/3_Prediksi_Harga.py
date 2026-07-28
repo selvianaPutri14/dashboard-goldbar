@@ -636,6 +636,38 @@ def main():
                 fig,
                 use_container_width=True
             )
+            st.markdown("---")
+
+            st.subheader("📊 Waktu Terbaik Membeli dan Menjual")
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+
+                st.success("💰 Peluang Membeli")
+
+                st.metric(
+                    "Harga Terendah Historis",
+                    f"${lowest_price:,.2f}"
+                )
+
+                st.write(
+                    f"Tanggal : {lowest_date.strftime('%d %B %Y')}"
+                )
+
+
+            with col2:
+
+                st.error("💵 Peluang Menjual")
+
+                st.metric(
+                    "Harga Tertinggi Historis",
+                    f"${highest_price:,.2f}"
+                )
+
+                st.write(
+                    f"Tanggal : {highest_date.strftime('%d %B %Y')}"
+                )
 
             # =============================================
             # REKOMENDASI BELI EMAS
