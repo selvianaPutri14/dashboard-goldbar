@@ -208,7 +208,7 @@ def main():
 
         # Evaluasi model
         st.subheader("Performa Model")
-        WINDOW = 90
+        WINDOW = 120
         close_scaled = scaler.transform(close_prices.reshape(-1, 1))
         X, y = [], []
         for i in range(len(close_scaled) - WINDOW):
