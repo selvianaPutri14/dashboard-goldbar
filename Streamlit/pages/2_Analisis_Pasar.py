@@ -7,6 +7,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import nltk
 import yfinance as yf
 from newsapi import NewsApiClient
+from datetime import datetime
 
 
 # ======================================================
@@ -120,10 +121,7 @@ def main():
         # ======================================================
         # YAHOO FINANCE
         # ======================================================
-        current_year = datetime.now().year
-
         gold = yf.Ticker("GC=F")
-        
         yahoo_df = gold.history(
             start="2001-01-01",
             end=datetime.now().strftime("%Y-%m-%d"),
