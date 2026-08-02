@@ -105,8 +105,6 @@ def main():
         # ======================================================
         # FILTER DATA
         # ======================================================
-              from datetime import datetime
-        
         st.subheader("Filter Data")
         
         min_year = 2001
@@ -123,10 +121,14 @@ def main():
         # YAHOO FINANCE
         # ======================================================
         gold = yf.Ticker("GC=F")
-
+        
+        start_date = "2001-01-01"
+        end_date = datetime.now().strftime("%Y-%m-%d")  # Tanggal hari ini
+        
         yahoo_df = gold.history(
-            start="2021-06-01",
-            end="2026-12-31"
+            start=start_date,
+            end=end_date,
+            auto_adjust=True
         )
 
         # ======================================================
