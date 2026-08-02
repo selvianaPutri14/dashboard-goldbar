@@ -120,14 +120,13 @@ def main():
         # ======================================================
         # YAHOO FINANCE
         # ======================================================
+        current_year = datetime.now().year
+
         gold = yf.Ticker("GC=F")
         
-        start_date = "2001-01-01"
-        end_date = datetime.now().strftime("%Y-%m-%d")  # Tanggal hari ini
-        
         yahoo_df = gold.history(
-            start=start_date,
-            end=end_date,
+            start="2001-01-01",
+            end=datetime.now().strftime("%Y-%m-%d"),
             auto_adjust=True
         )
 
