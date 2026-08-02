@@ -105,16 +105,18 @@ def main():
         # ======================================================
         # FILTER DATA
         # ======================================================
+              from datetime import datetime
+        
         st.subheader("Filter Data")
-
-        min_year = 2021
-        max_year = 2026
-
+        
+        min_year = 2001
+        max_year = datetime.now().year  # Tahun saat ini secara otomatis
+        
         year_range = st.slider(
             "Pilih rentang tahun:",
             min_year,
             max_year,
-            (2021, max_year)
+            (min_year, max_year)
         )
 
         # ======================================================
