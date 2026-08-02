@@ -149,7 +149,7 @@ def main():
         gold = yf.Ticker("GC=F")
 
         df = gold.history(
-            period="5y",
+            period="10y",
             interval="1d",
             auto_adjust=False
         )
