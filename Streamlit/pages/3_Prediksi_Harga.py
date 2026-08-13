@@ -321,6 +321,9 @@ def main():
 
             legend_title="Keterangan"
         )
+        fig_compare.update_xaxes(
+            tickformat="%b %Y"
+        )
         fig_compare.update_traces(
             line=dict(width=2)
         )
