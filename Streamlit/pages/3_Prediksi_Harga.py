@@ -305,6 +305,20 @@ def main():
                 "Prediksi GRU"
             ],
 
+            # ==========================================
+            # RINGKAS DATA AKTUAL VS PREDIKSI PER BULAN
+            # ==========================================
+            
+            compare_df["Tanggal"] = pd.to_datetime(compare_df["Tanggal"])
+            
+            compare_monthly = (
+                compare_df
+                .set_index("Tanggal")
+                .resample("MS")[["Harga Asli", "Prediksi GRU"]]
+                .mean()
+                .reset_index()
+            )
+
             title= 
             "Perbandingan Harga Aktual dan Prediksi GRU",
             color_discrete_map={
