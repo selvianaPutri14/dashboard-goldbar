@@ -306,10 +306,10 @@ def main():
             ],
 
             title= 
-            "Perbandingan Harga Asli dan Prediksi GRU"
+            "Perbandingan Harga Aktual dan Prediksi GRU",
             color_discrete_map={
-            "Harga Asli": "red",      
-            "Prediksi GRU": "blue"     
+            "Harga Asli": "#FF0000",
+            "Prediksi GRU": "#87CEEB"    
             }
         )
 
