@@ -308,8 +308,8 @@ def main():
             title= 
             "Perbandingan Harga Aktual dan Prediksi GRU",
             color_discrete_map={
-            "Harga Asli": "#FF0000",
-            "Prediksi GRU": "#87CEEB"    
+            "Harga Asli": "#4169E1",
+            "Prediksi GRU": "#FF0000"
             }
         )
 
