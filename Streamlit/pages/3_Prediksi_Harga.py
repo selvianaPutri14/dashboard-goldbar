@@ -321,7 +321,12 @@ def main():
 
             legend_title="Keterangan"
         )
-
+        # Tampilan sumbu X per bulan
+        fig_compare.update_xaxes(
+            dtick="M1",
+            tickformat="%b %Y",
+            ticklabelmode="period"
+        )
         fig_compare.update_traces(
             line=dict(width=1)
         )
