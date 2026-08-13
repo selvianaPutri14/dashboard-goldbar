@@ -322,7 +322,7 @@ def main():
             legend_title="Keterangan"
         )
         fig_compare.update_traces(
-            line=dict(width=1)
+            line=dict(width=2)
         )
 
         st.plotly_chart(
