@@ -316,7 +316,7 @@ def main():
         fig_compare.update_layout(
             hovermode="x unified",
             height=500,
-            legend_title="Keterangan"
+            legend_title="Keterangan",
             xaxis_title="Tanggal",
             yaxis_title="Harga Emas"
         )
