@@ -323,7 +323,7 @@ def main():
         )
 
         fig_compare.update_traces(
-            line=dict(width=2)
+            line=dict(width=1)
         )
 
         st.plotly_chart(
