@@ -295,7 +295,7 @@ def main():
         })
 
         # Ambil 180 data terakhir
-        compare_df = compare_df.tail(90)
+        compare_df = compare_df.tail(180)
 
         fig_compare = px.line(
 
