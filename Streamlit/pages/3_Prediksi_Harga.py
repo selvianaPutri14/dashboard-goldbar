@@ -307,10 +307,10 @@ def main():
 
             title= 
             "Perbandingan Harga Asli dan Prediksi GRU"
-                color_discrete_map={
-        "Harga Asli": "#E53935",      # Merah
-        "Prediksi GRU": "#5DADE2"     # Biru muda
-    }
+            color_discrete_map={
+            "Harga Asli": "red",      
+            "Prediksi GRU": "sky blue"     
+            }
         )
 
         fig_compare.update_layout(
