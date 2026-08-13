@@ -314,12 +314,19 @@ def main():
         )
 
         fig_compare.update_layout(
-
             hovermode="x unified",
-
             height=500,
-
             legend_title="Keterangan"
+            xaxis_title="Tanggal",
+            yaxis_title="Harga Emas"
+        )
+
+        # Sumbu X ditampilkan setiap 1 bulan
+        fig_compare.update_xaxes(
+            dtick="M1",
+            tickformat="%b %Y",
+            ticklabelmode="period",
+            tickangle=0
         )
  
         fig_compare.update_traces(
