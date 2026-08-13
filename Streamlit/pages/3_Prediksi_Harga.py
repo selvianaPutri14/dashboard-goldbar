@@ -294,6 +294,9 @@ def main():
                 y_pred_true
         })
 
+        # Ambil 90 data terakhir
+        compare_df = compare_df.tail(90)
+
         fig_compare = px.line(
 
             compare_df,
