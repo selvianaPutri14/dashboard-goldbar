@@ -306,7 +306,11 @@ def main():
             ],
 
             title=
-            "Perbandingan Harga Asli dan Prediksi GRU"
+            "Perbandingan Harga Asli dan Prediksi GRU",
+    color_discrete_map={
+        "Harga Asli": "red",
+        "Prediksi GRU": "blue"
+    }
         )
 
         fig_compare.update_layout(
