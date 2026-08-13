@@ -305,8 +305,11 @@ def main():
                 "Prediksi GRU"
             ],
 
-            title=
-            "Perbandingan Harga Asli dan Prediksi GRU"
+            title= "Perbandingan Harga Asli dan Prediksi GRU"
+            color_discrete_map={
+                "Harga Asli": "#E53935",
+                "Prediksi GRU": "#3498DB"
+            }
         )
 
         fig_compare.update_layout(
@@ -319,7 +322,7 @@ def main():
         )
 
         fig_compare.update_traces(
-            line=dict(width=2)
+            line=dict(width=1)
         )
 
         st.plotly_chart(
