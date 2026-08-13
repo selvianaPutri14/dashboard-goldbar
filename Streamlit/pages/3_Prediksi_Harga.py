@@ -309,7 +309,7 @@ def main():
             "Perbandingan Harga Asli dan Prediksi GRU"
             color_discrete_map={
             "Harga Asli": "red",      
-            "Prediksi GRU": "skyblue"     
+            "Prediksi GRU": "blue"     
             }
         )
 
