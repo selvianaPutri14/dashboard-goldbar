@@ -218,7 +218,7 @@ def main():
         y = np.array(y).flatten()
         
         total = len(X)
-        val_end = int(total * 0.80)
+        val_end = int(total * 0.70)
         X_test = X[val_end:]
         y_test = y[val_end:]
         
